@@ -1,0 +1,9 @@
+print " integer please: "
+user_num=Integer(gets.chomp)
+if user_num < 0
+puts " you picked a negative number! "
+else if user_num > 0 
+puts " you picked a positive number !"
+else
+puts " you picked zero!"
+end
