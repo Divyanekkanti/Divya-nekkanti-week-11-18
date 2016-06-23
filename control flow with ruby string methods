@@ -1,0 +1,7 @@
+print "Thring ,pleathe!:"
+user_input=gets.chomp
+user.input.gsub!(/s/,"th")
+else
+puts "nothing to do here!"
+end
+puts "your string is : #{user_input}"
