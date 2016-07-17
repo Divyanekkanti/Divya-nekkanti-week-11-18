@@ -1,0 +1,17 @@
+describe('angularjs homepage', function() {
+  it('should have a title', function() {
+    browser.get('http://angularjs.org/');
+
+expect(browser.getTitle()).toContain('AngularJS');
+  });
+});
+
+//The above simple test will navigate to an AngularJS home page and checks for its page title.
+
+//Below is the sample config file named 'conf.js'
+exports.config = {
+	//The address of a running selenium server.
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+ //Here we specify the name of the specs files.
+  specs: ['testspec.js']
+}
