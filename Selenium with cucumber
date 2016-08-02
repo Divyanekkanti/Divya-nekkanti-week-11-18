@@ -1,0 +1,23 @@
+public class LoginTest {
+@Given("^user navigates to SOFTWARETETINGHELP.COM$")
+public void navigatePage() {
+system.out.println(“Cucumber executed Given statement”);
+}
+@When("^user logs in using Username as \"(.*)\" and Password \"(.*)\"$")
+public void login(String usename,String password) {
+system.out.println(“Username is:”+ usename);
+system.out.println(“Password is:”+ password);
+}
+@When("^click the Submit button$")
+public void clickTheSubmitButton() {
+system.out.println(“Executing When statement”)
+}
+@Then("^Home page should be displayed$")
+public void validatePage() {
+system.out.println(“Executing Then statement”)
+}
+@Then("^login should be successful$")
+public void validateLoginSuccess() {
+system.out.println(“Executing 2<sup>nd</sup> Then statement”)
+}
+}
