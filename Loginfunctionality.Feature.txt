@@ -1,0 +1,7 @@
+Feature : verify login functionality
+scenario : Login with valid credentials 
+Given user is on login page
+When user enter username "hello"
+And user enter password " testing world"
+And user click on signin button
+Then user logged in succesfully
