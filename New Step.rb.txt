@@ -1,0 +1,7 @@
+when(/^user enter username "([^"]*)"$/) do |arg1]
+puts "This is for enter username " + ag1
+end
+
+When(/^user enter password "([^]*)"$/) do |arg1|
+puts "This is for enter password " + arg1
+end
